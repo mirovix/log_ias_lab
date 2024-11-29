@@ -24,7 +24,7 @@ cd ~/log_ias_lab/log_ias_lab
 python3 log_ias_lab
 ```
 
-## Usage as Service that runs at 08.00
+## Usage as Service that runs at 11.00
 ```bash
-(crontab -l; echo "0 8 * * * /bin/bash -i -c 'source $HOME/.bashrc && cd $HOME/log_ias_lab/ && python3 log_ias_lab >> $HOME/log_ias_lab.log 2>&1'") | crontab -
+(crontab -l; echo "0 11 * * * /bin/bash -i -c 'source $HOME/.bashrc && cd $HOME/log_ias_lab/ && python3 log_ias_lab >> $HOME/log_ias_lab.log 2>&1'") | crontab -
 ```
