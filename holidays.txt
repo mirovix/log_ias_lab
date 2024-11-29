@@ -1,9 +1,0 @@
-01-01  # Capodanno
-06-01  # Epifania
-25-04  # Festa della Liberazione
-01-05  # Festa dei Lavoratori
-15-08  # Ferragosto
-01-11  # Tutti i Santi
-08-12  # Immacolata Concezione
-25-12  # Natale
-26-12  # Santo Stefano

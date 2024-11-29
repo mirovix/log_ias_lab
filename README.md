@@ -26,5 +26,5 @@ python3 log_ias_lab
 
 ## Usage as Service that runs at 11.00 except on weekends and holidays
 ```bash
-(crontab -l; echo "0 11 * * 1-5 [ \$(date +\%d-\%m) \$(grep -q \$(date +\%d-\%m) \$HOME/log_ias_lab/holidays.txt && echo '1' || echo '0') -eq 0 ] && /bin/bash -i -c 'source \$HOME/.bashrc && cd \$HOME/log_ias_lab/ && python3 log_ias_lab >> \$HOME/log_ias_lab.log 2>&1'") | crontab -
+(crontab -l; echo "0 11 * * 1-5 /bin/bash -i -c 'source $HOME/.bashrc && cd $HOME/log_ias_lab/ && python3 log_ias_lab >> $HOME/log_ias_lab.log 2>&1'") | crontab -
 ```
